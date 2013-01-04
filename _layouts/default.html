@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Moz Morris" />
+        <meta name="viewport" content="width=device-width">
+
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/screen.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
+
+        <style>
+            a,
+            h3,
+            .date span {
+                color: #{{ page.color }};
+            }
+        </style>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="clearfix">
+            <nav>
+                <ul>
+                    <li>
+                        {% if page.link == 'home' %}
+                          <a href="/">Home</a>
+                        {% else %}
+                          <a href="/about.html">About</a>
+                        {% endif %}
+
+
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="image-wrapper">
+                <img src="/images/space.gif">
+                <div class="image" style="background-image: url(/images/{{ page.image }});"></div>
+            </div>
+        </header>
+        <div class="wrapper clearfix">
+            <div class="main">
+                {{ content }}
+                <div class="author clearfix">
+                    <a class="clip" href="#"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
+                    <h3>Moz Morris</h3>
+                    <p>Freelance Web Developer</p>
+                </div>
+                <div class="meta clearfix">
+                    <div class="contact">
+                        <p><a href="https://github.com/MozMorris">https://github.com/MozMorris</a></p>
+                        <p><a hrfe="http://www.linkedin.com/in/mozmorris">http://www.linkedin.com/in/mozmorris</a></p>
+                    </div>
+                    <div class="contact right">
+                        <p>moz@earthview.co.uk</p>
+                        <p>powered by <a href="https://github.com/mojombo/jekyll">jeykll</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        // var pageTracker = _gat._getTracker("UA-6016902-1");
+        pageTracker._trackPageview();
+        </script>
+    </body>
+</html>
