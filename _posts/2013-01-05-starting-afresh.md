@@ -18,12 +18,12 @@ end
 post = BlogPost.new('Starting Afresh')
 {% endhighlight %}
 
-So what better way to start the year than with a hacker clique; **start blogging on a regular basis**.
+So what better way to start the year than with a hacker cliché; **start blogging on a regular basis**.
 
 The Past
 --------
 
-My total sum of posts in 2012 was **ONE**, and even then I ended up deleting it. This time will be different I keep promising myself. This time my writing will have some value.
+My sum total of posts in 2012 was **ONE**, and even then I ended up deleting it. This time will be different I keep promising myself. This time my writing will have some value.
 
 Looking back I can claim to having a single post that ever gained some traction. Written back in November 2009, it was a step by step guide to building a [Hackintosh on an old Dell](http://earthview.co.uk/2009/11/install-guide-mac-os-x-snow-leopard-10-6-0-on-a-dell-dimension-9200-dxp061/) box. It still receives over 100 unique page views per month. Back in 2009 it was somewhere near the 1000 mark.
 

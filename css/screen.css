@@ -72,6 +72,7 @@ textarea {
 /* Typography */
 html {
     font: 20px/30px Georgia, Cambria, "Times New Roman", Times, serif;
+    position: relative;
 }
 
 .wf-active {
@@ -264,6 +265,10 @@ article {
 
     nav {
         position: absolute;
+    }
+
+    .typekit-badge {
+        position: absolute !important;
     }
 
 }
