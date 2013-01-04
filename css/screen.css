@@ -56,9 +56,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Hide text while TypeKit fonts load async */
+.wf-loading .main p,
+.wf-loading .main ul li,
+.wf-loading .main ol li,
+.wf-loading .main h1,
+.wf-loading .main h2,
+.wf-loading .main h3,
+.wf-loading .main h4,
+.wf-loading nav a {
+
+    visibility: hidden;
+}
+
+/* Typography */
+html {
+    font: 20px/30px Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.wf-active {
+    font-family: "calluna-sans-1", "calluna-sans-2";
+    font-weight: 400;
+}
+
+.wf-active strong,
+.wf-active b {
+    font-weight: 700;
+}
+
 body {
     background-color: #f2f2f0;
-    font: 20px/30px Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 a {
@@ -237,6 +264,19 @@ article {
 
     nav {
         position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .contact {
+        float: none;
+    }
+
+    .contact.right {
+        float: none;
+        text-align: left;
     }
 
 }
