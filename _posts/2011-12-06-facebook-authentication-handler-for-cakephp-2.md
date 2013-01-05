@@ -2,8 +2,8 @@
 layout: post
 title: CakePHP 2 Facebook Authentication Handler
 location: Southampton, England
-image: headers/montmartre_graffiti.jpg
-color: 9e1a47
+image: headers/cricketers_arms.jpg
+color: 426852
 ---
 
 {{ page.title }}
@@ -15,4 +15,4 @@ The purpose of the Facebook Authentication Handler is to provide Facebook Authen
 
 The handler itself is part a *FacebookAuth* plugin, though this just makes the handler easy to redistribute. Includes example configuration settings and a controller detailing a typical use case.
 
-**Note** that though the handler stores the access token returned by Facebook, it **does not** currently provide a means to makes calls to the Graph API. It's function is to provide authentication. Of course, you could use the access token and your preferred method to communicate with Facebook.
+**Note** that though the handler stores the access token returned by Facebook, it **does not** provide a means to makes requests to the Graph API. It's function is to provide authentication. Of course, you could use the access token and your preferred method to communicate with Facebook.

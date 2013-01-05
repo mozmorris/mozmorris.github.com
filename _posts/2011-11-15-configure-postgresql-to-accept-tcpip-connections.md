@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure PostgreSQL to accept incoming TCP/IP connections
+title: Configure PostgreSQL to accept TCP/IP connections
 location: Southampton, England
 image: headers/montmartre_graffiti.jpg
 color: 9e1a47
