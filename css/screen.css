@@ -182,6 +182,7 @@ article {
 }
 
 .main code {
+  display: inline-block;
   border: 1px solid #ddd;
   font-size: 85%;
   padding: 0 .2em;

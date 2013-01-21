@@ -5,7 +5,7 @@ It is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll) in
 
 The basic skeleton was cloned from [Tom Preston-Werner](http://tom.preston-werner.com/) of [GitHub](https://github.com/) fame.
 
-The design was heavily inspired by and hijacked from [Medium](https://medium.com/).
+The design was heavily inspired by [Medium](https://medium.com/).
 
 The [photography is all mine](http://pics.mozmorris.co.uk/).
 
