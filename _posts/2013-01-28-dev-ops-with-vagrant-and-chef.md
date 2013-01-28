@@ -2,8 +2,8 @@
 layout: post
 title: "Devops with Vagrant and Chef"
 location: Southampton, England
-image: headers/bath_street_snow.jpg
-color: 712235
+image: headers/new_york_downtown.jpg
+color: 5b8caf
 ---
 
 {{ page.title }}
@@ -37,7 +37,7 @@ Creating a VM the Quick Way
 This uses a <strike>base CentOs 6.3 box listed on [http://www.vagrantbox.es/](http://www.vagrantbox.es/)</strike> CentOS 6.3 box I created myself. It's the standard CentOS 6.3 minimal install with the addition of Git & rbenv, [ruby-build](https://github.com/sstephenson/ruby-build) & rbenv-gem-rehash.
 
 {% highlight bash %}
-$ vagrant box add centos63 http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.3-x86_64-v20130101.box
+$ vagrant box add centos63 http://mozmorris.co.uk/static/CentOS_63_x64.box
 $ mkdir centos63 && cd centos63
 $ vagrant init centos63
 $ vagrant up
@@ -105,7 +105,7 @@ $ vagrant ssh
 Running a Sinatra App
 ---------------------
 
-Just for a quick demo, I'm creating a hello world Sinatra app. In this instance, I've put the app in the `/vagrant` directory so that it's possible to access it from the host machine.
+Just for a quick demo, I'm creating a hello world [Sinatra](http://www.sinatrarb.com/) app. In this instance, I've put the app in the `/vagrant` directory so that it's possible to access the code from the host machine.
 
 {% highlight bash %}
 $ cd /vagrant
@@ -143,7 +143,7 @@ Create a virtual host entry in Apache:
 </VirtualHost>
 {% endhighlight %}
 
-Add the hello-world.localhost hostname to the hosts file, restart apache and check to see if the app's running.
+Add the **hello-world.localhost** hostname to the hosts file, restart apache and check to see if the app's running.
 
 {% highlight bash %}
 $ echo 'echo "127.0.0.1   hello-world.localhost" >> /etc/hosts' | sudo sh
@@ -152,10 +152,12 @@ $ curl hello-world.localhost
 Hello world!
 {% endhighlight %}
 
-Phew, We Made It
-----------------
+Phew, Made It
+-------------
 
-I've started using the VM to serve the apps that I frequently work on. This only involves a couple of steps as I'm keeping the code base on the host.  Firstly, symlinking the code so that it's accessible by the VM. Secondly, setting up the corresponding Apache config. I'm still running databases on the host machine but I should look to offload these to a VM at some point.
+I've been using the VM to serve the apps that I frequently work on. This only involves a couple of steps as I'm keeping the code base on the host. Firstly, symlinking the code so that it's accessible by the VM. Secondly, setting up the corresponding Apache config. I'm still running databases on the host machine but I should look to offload these to a VM at some point.
+
+In summary, Vagrant is awesome. And so is Chef. I'm recommending them, to myself.
 
 
 
