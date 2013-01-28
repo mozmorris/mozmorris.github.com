@@ -188,7 +188,8 @@ article {
     padding: 0 .2em;
 }
 
-pre code {
+pre,
+code {
     overflow-x: auto;
 }
 
