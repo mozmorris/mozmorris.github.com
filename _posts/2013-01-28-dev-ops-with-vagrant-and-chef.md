@@ -11,7 +11,7 @@ color: 5b8caf
 
 Just over a year ago, my good friend [Mike Rumble](https://www.facebook.com/rumble) received a job offer to join Facebook's User Interface team. After some deliberation (only joking) he accepted the offer. Unluckily he missed out on the year's H-1B visa allocation, being forced to wait until September '12 to move across the pond. This wasn't such a bad thing of course. It meant he got to have a proper send off, including a memorable [trip to New York](http://pics.mozmorris.co.uk/new-york-ny/) and some great nights down the pub. 
 
-We ended up talking for a while about what it was going to be like working at Facebook HQ, and in particular what the technology stack & development work flow might look like. *How the hell do you hack code for the world's most visited site?* We assumed there would be some clever [sandboxing](http://en.wikipedia.org/wiki/Sandbox_\(software_development) going on. This got us thinking about setting up virtual machines on our dev boxes that would mirror or closely resemble our production environment. I think Mike managed to move his code to a VM running Ubuntu. I on the other hand never got round to it until just recently.
+We ended up talking for a while about what it was going to be like working at Facebook HQ, and in particular what the technology stack & development work flow might look like. *How the hell do you hack code for the world's most visited site?* We assumed there would be some clever [sandboxing](http://en.wikipedia.org/wiki/Sandbox_\(software_development) going on. This got us thinking about setting up virtual machines on our dev boxes that would mirror or closely resemble our production environment. I think Mike managed to move his code to a VM running Ubuntu. I, on the other hand, never got round to it until just recently.
 
 This is an overview of my set up and how I got it running.
 
@@ -43,7 +43,7 @@ $ vagrant init centos63
 $ vagrant up
 {% endhighlight %}
 
-What's happening here? The box image is downloaded, a Vagrantfile is created and the VM is started. The Vagrantfile is the VM's configuration file. It's written in Ruby so it possible to programmatically configure the VM.
+What's happening here? The box image is downloaded, a Vagrantfile is created and the VM is started. The Vagrantfile is the VM's configuration file. It's written in Ruby making it possible to programmatically configure the VM.
 
 Using <strike>some random box from the internet</strike> my built box seems a little risky I know, but just go with it for now. I'll write up another post showing how to create a box from scratch.
 

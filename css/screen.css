@@ -171,36 +171,39 @@ article {
 }
 
 .main pre {
-  border: 1px solid #ddd;
-  padding: 0 .4em;
+    border: 1px solid #ddd;
+    padding: 0 .4em;
 }
 
 .main ul,
 .main ol {
-  margin-left: 1.35em;
-  padding: 0;
+    margin-left: 1.35em;
+    padding: 0;
 }
 
 .main code {
-  display: inline-block;
-  border: 1px solid #ddd;
-  font-size: 85%;
-  padding: 0 .2em;
+    display: inline-block;
+    border: 1px solid #ddd;
+    font-size: 85%;
+    padding: 0 .2em;
+}
+
+pre code {
+    overflow-x: auto;
 }
 
 .main pre code {
   border: none;
 }
 
-
 .main pre.terminal {
-  border: 1px solid black;
-  background-color: #333;
-  color: white;
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
 }
 
 .main pre.terminal code {
-  background-color: #333;
+    background-color: #333;
 }
 
 .date {
