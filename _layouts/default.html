@@ -80,8 +80,13 @@
             <div class="main">
                 {{ content }}
                 <div class="author clearfix">
-                    <a class="clip" href="/about.html"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
-                    <h3><a href="/about.html">Moz Morris</a></h3>
+                    {% if page.link == 'home' %}
+                        <a class="clip" href="/"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
+                        <h3><a href="/">Moz Morris</a></h3>
+                    {% else %}
+                        <a class="clip" href="/about.html"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
+                        <h3><a href="/about.html">Moz Morris</a></h3>
+                    {% endif %}
                     <p>Freelance Web Developer</p>
                 </div>
                 <div class="meta clearfix">
