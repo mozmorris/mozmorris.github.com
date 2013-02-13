@@ -9,15 +9,17 @@ color: b57a3b
 {{ page.title }}
 ================
 
-I've been reading [the poignant guide](http://mislav.uniqpath.com/poignant-guide/) of late. I remember giving it a go some time back but it didn't really click with me then. I'm not the biggest fan of reading technical books on hand-held electronic devices. Actually, it just seems to be a problem with the way codeblocks render on them. But the eBook on the iPad has been alright as it's fairly conside. That's enough Apple endorsements already, on with the good stuff. I reach [chapter six] (http://mislav.uniqpath.com/poignant-guide/book/chapter-6.html) with it's metaprogramming goodness and after reading it through a couple of times, I got the concept. But there were some lines of code that hadn't quite sunk in. So I decided to dig a little deeper and hopefully this post will provide an introduction to what I learnt.
+I've been reading [the poignant guide](http://mislav.uniqpath.com/poignant-guide/) of late. I remember giving it a go some time back but it didn't really click with me then. I'm not the biggest fan of reading technical books on hand-held electronic devices. Actually, it just seems to be a problem with the way codeblocks render on them. But the eBook on the iPad is alright as it's fairly concise. That's enough Apple endorsements already, on with the good stuff. I reach [chapter six](http://mislav.uniqpath.com/poignant-guide/book/chapter-6.html) with its metaprogramming goodness and after reading it through a couple of times, I got the concept. But there were some lines of code that hadn't quite sunk in. So I decided to dig a little deeper and hopefully this post will provide an introduction to my learnings.
 
 ## What is Metaprogramming and Why Use it?
 
-There's a long winded but no doubt accurate [metaprogramming definition](http://en.wikipedia.org/wiki/Metaprogramming) on Wikipedia. Here's a much shorter, albeit Ruby specific one: 
+There's a long winded (but no doubt accurate) [metaprogramming definition](http://en.wikipedia.org/wiki/Metaprogramming) on Wikipedia. Here's a much shorter, albeit Ruby specific one: 
 
 Ruby Metaprogramming is the writing of code that alters language constructs at runtime.
 
-That's pretty short but it's not exactly plain English. What it's saying is, metaprogramming is *writing code that writes code*. That almost sounds like something from a science fiction movie. If that's not a good enough reason to start metaprogramming then perhaps this next one will be. Metaprogramming results in writing less code.
+That's pretty short but it's not exactly plain English. What it's saying is, metaprogramming is *writing code that writes code*. That almost sounds like something from a science fiction movie. If that's not a good enough reason to start metaprogramming then perhaps this next one will be. 
+
+Metaprogramming results in writing less code.
 
 ## You're already using it...
 
@@ -73,7 +75,7 @@ class Beer
 end
 {% endhighlight %}
 
-So we've ended up with 30 lines of code, but only written nine of them. Awesome. Let's do some our own meta then.
+So we've ended up with 30 lines of code, but only written 9 of them. Awesome. Let's do some of our own meta then.
 
 ## Beer Brewing
 
@@ -127,25 +129,27 @@ b.hops?           #=> "We've got 50 units of hops in stock."
 As well as writing less code, this method also provides some flexibility. For example, what if our next brewery wanted to stock an ingredient other than water, malt, hops or yeast? No problem:
 
 {% highlight ruby %}
-class HeinekenIntl < Brewery
+class FostersGroup < Brewery
   ingredients :tap_water, :cheap_malt, :mouldy_hops, :industrial_yeast
 end
 
-f = HeinekenIntl.new   #=> #<HeinekenIntl:0x007f83b31e1d90>
-f.add_mouldy_hops 80  #=> 80
-f.mouldy_hops?        #=> "We've got 80 units of mouldy hops in stock."
+f = FostersGroup.new   #=> #<FostersGroup:0x007f83b31e1d90>
+f.add_mouldy_hops 80   #=> 80
+f.mouldy_hops?         #=> "We've got 80 units of mouldy hops in stock."
 {% endhighlight %}
 
 Luckily for the brewers of that well known Australian brand larger, we can accommodate their inferior product and brewing practices. Perhaps in this case meta's not so great ;-]
 
 ## Beer Drinking
 
-I've barely scratched the surface with what's possible but after spending time learning a few techniques, this has hopefully been a good starting point. The following resources are very much worth checking out.
+I've barely scratched the surface with what's possible but hopefully this has been a good starting point. The rabbit hole goes a whole lot deeper once we start looking at metaclasses and Ruby's object model, but perhaps I'll leave that for another post.
+
+The following resources are very much worth checking out.
 
 * [define_method()](http://www.ruby-doc.org/core-1.9.3/Module.html#method-i-define_method)
 * [Metaprogramming in Ruby](http://ruby-metaprogramming.rubylearning.com/)
 * [Chapter 6, The Poignant Guide](http://mislav.uniqpath.com/poignant-guide/book/chapter-6.html)
 
-And for the connoisseurs.
+And for the beer connoisseurs.
 
 * [BrewDog Brewery](http://www.brewdog.com/)
