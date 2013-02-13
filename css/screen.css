@@ -183,6 +183,7 @@ article {
 
 .main code {
     border: 1px solid #ddd;
+    line-height: 1.3em;
     font-size: 85%;
     padding: 0 0.2em;
 }
