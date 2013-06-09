@@ -9,6 +9,8 @@ color: f11224
 {{ page.title }}
 ================
 
+*Updated 08/06/2013 to reflect changes in Jekyll 1.0.0*
+
 **tldr:** This site was built using Jekyll. [Fork/Clone it on GitHub.](https://github.com/MozMorris/mozmorris.github.com)
 
 I'd been looking to ditch WordPress as the back-end for this site for a while. It seemed overkill and I'm no longer interested in hosting comments - who wants to moderate (and host) spam anyway? Switching to [Jekyll](http://jekyllrb.com/) offered the chance to learn and hack something new over the holiday period. As an added extra, it meant I could host the site on [GitHub Pages](http://pages.github.com/) and it would be automatically updated when I pushed my commits.
@@ -37,7 +39,7 @@ $ git clone git://github.com/mojombo/mojombo.github.com.git  mozmorris.github.co
 $ cd mozmorris.github.com
 $ rm -rf .git
 $ git init
-$ jekyll --server
+$ jekyll serve
 {% endhighlight %}
 
 **Visited** `http://localhost:4000` in my browser and there it was was. In ~10 minutes I had the bare bones of a new site.
