@@ -8,9 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="author" content="Moz Morris" />
         <meta name="viewport" content="width=device-width">
-
         <title>{{ page.title }}</title>
-
         <link rel="stylesheet" href="/css/screen.css">
         <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
 
@@ -22,38 +20,11 @@
         </style>
 
         <script type="text/javascript">
-          (function() {
-            var config = {
-              kitId: 'pqx4dld',
-              scriptTimeout: 3000
-            };
-            var h = document.getElementsByTagName("html")[0];
-            h.className += " wf-loading";
-            var t = setTimeout(function() {
-                h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
-                h.className += " wf-inactive"
-            }, config.scriptTimeout);
-            var tk = document.createElement("script"), d = false;
-            tk.src = '//use.typekit.net/' + config.kitId + '.js';
-            tk.type = "text/javascript";
-            tk.async = "true";
-            tk.onload = tk.onreadystatechange = function() {
-                var a = this.readyState;
-                if (d || a && a != "complete" && a!= "loaded") return;
-                d = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (b) {}
-            };
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(tk,s)
-          })();
+            !function(){var a={kitId:"pqx4dld",scriptTimeout:3e3},b=document.getElementsByTagName("html")[0];b.className+=" wf-loading";var c=setTimeout(function(){b.className=b.className.replace(/(\s|^)wf-loading(\s|$)/g," "),b.className+=" wf-inactive"},a.scriptTimeout),d=document.createElement("script"),e=!1;d.src="//use.typekit.net/"+a.kitId+".js",d.type="text/javascript",d.async="true",d.onload=d.onreadystatechange=function(){var b=this.readyState;if(!(e||b&&"complete"!=b&&"loaded"!=b)){e=!0,clearTimeout(c);try{Typekit.load(a)}catch(d){}}};var f=document.getElementsByTagName("script")[0];f.parentNode.insertBefore(d,f)}();
         </script>
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
         <![endif]-->
     </head>
     <body>
@@ -94,23 +65,18 @@
                     </div>
                     <div class="contact right">
                         <p>moz@earthview.co.uk</p>
-                        <p>powered by <a href="https://github.com/mojombo/jekyll">jeykll</a></p>
+                        <p>powered by <a href="https://github.com/mojombo/jekyll">jeykll</a> &amp; <a href="https://github.com/">GitHub</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-37441744-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-37441744-1');ga('send','pageview');
         </script>
     </body>
 </html>
