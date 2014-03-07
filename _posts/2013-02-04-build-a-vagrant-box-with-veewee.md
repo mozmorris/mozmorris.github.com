@@ -3,6 +3,7 @@ layout: post
 title: "Building a Vagrant Box with VeeWee"
 location: Southampton, England
 image: headers/new_orleans_hot_sauce.jpg
+caption: "Pepper Palace, New Orleans, USA"
 color: f44212
 ---
 

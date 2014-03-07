@@ -3,6 +3,7 @@ layout: post
 title: Configure PostgreSQL to accept TCP/IP connections
 location: Southampton, England
 image: headers/montmartre_graffiti.jpg
+caption: "Montmartre, Paris"
 color: 9e1a47
 ---
 

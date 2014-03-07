@@ -2,7 +2,8 @@
 layout: post
 title: "Devops with Vagrant and Chef"
 location: Southampton, England
-image: headers/new_york_downtown.jpg
+image: headers/new_york_midtown.jpg
+caption: "Midtown, New York"
 color: 5b8caf
 ---
 

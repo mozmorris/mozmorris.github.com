@@ -3,6 +3,7 @@ layout: post
 title: CakePHP 2 Facebook Authentication Handler
 location: Southampton, England
 image: headers/cricketers_arms.jpg
+caption: "Cricketers Arms, Wimborne Minster"
 color: 426852
 ---
 

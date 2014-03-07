@@ -3,6 +3,7 @@ layout: post
 title: "An Intro to Ruby Metaprogramming"
 location: Southampton, England
 image: headers/indy_scooter.jpg
+caption: "Indy, Bath Street"
 color: b57a3b
 ---
 

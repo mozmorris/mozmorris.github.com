@@ -3,6 +3,7 @@ layout: post
 title: CakePHP 2 Yahoo Placefinder Datasource
 location: Southampton, England
 image: headers/sf_china_town.jpg
+caption: "China Town, San Francisco"
 color: b68e57
 ---
 

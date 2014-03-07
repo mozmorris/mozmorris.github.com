@@ -3,6 +3,7 @@ layout: post
 title: "Goodbye Screen, My Old Friend"
 location: "Anna Maria Island, FL"
 image: headers/jesus_ami.jpg
+caption: "Holmes Beach, USA"
 color: 578426
 ---
 

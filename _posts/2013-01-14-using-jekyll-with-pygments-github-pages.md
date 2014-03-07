@@ -3,6 +3,7 @@ layout: post
 title: "Using Jekyll with GitHub Pages Or: How I Built This Blog"
 location: Southampton, England
 image: headers/pamplona_people.jpg
+caption: "Running of the Bulls, Pamplona"
 color: f11224
 ---
 

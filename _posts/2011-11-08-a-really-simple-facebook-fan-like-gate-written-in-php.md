@@ -3,6 +3,7 @@ layout: post
 title: Simple Facebook Like Gate
 location: Southampton, England
 image: headers/sf_city_limits.jpg
+caption: "City Limits, San Francisco"
 color: 994738
 ---
 

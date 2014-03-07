@@ -3,6 +3,7 @@ layout: post
 title: "Show and Tell"
 location: "San Francisco, CA"
 image: headers/california_mozy.jpg
+caption: "San Francisco, USA"
 color: 1c3982
 ---
 

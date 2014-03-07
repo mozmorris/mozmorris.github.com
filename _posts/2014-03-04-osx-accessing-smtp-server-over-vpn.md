@@ -3,6 +3,7 @@ layout: post
 title: "OS X: How to Access Email While Using a VPN"
 location: "Southampton, England"
 image: headers/quito_people.jpg
+caption: "Quito, Ecuador"
 color: 268742
 ---
 

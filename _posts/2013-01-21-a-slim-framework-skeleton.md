@@ -3,6 +3,7 @@ layout: post
 title: "A Slim Skeleton"
 location: Southampton, England
 image: headers/bath_street_snow.jpg
+caption: "Bath Street, Southampton"
 color: 712235
 ---
 

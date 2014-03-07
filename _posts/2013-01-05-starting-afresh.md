@@ -3,6 +3,7 @@ layout: post
 title: Starting Afresh
 location: Southampton, England
 image: headers/turkish_limes.jpg
+caption: "Marmaris Market, Turkey"
 color: 516703
 ---
 
