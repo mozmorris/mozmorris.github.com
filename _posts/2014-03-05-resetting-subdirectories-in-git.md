@@ -3,6 +3,7 @@ layout: post
 title: "Resetting Subdirectories in Git"
 location: "Southampton, England"
 image: headers/motorbike_yama.jpg
+caption: "Jama, Ecuador"
 color: b21913
 ---
 

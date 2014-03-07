@@ -118,6 +118,17 @@ nav {
         top: 0;
         width: 100%;
     }
+
+    .caption {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding: 5px;
+        background-color: rgba(#fff,.6);
+        color: #333;
+        font-size: 0.7em;
+        line-height: 1em;
+    }
 }
 
 .scale img {

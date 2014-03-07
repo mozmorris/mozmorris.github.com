@@ -43,6 +43,11 @@
             <div class="image-wrapper scale">
                 <img src="/images/space.gif">
                 <div class="image" style="background-image: url(/images/{{ page.image }});"></div>
+                {% if page.caption %}
+                    <div class="caption">
+                        <em>{{ page.caption }}</em>
+                    </div>
+                {% endif %}
             </div>
         </header>
         <div class="wrapper clearfix">
