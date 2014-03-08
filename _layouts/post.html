@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
-<section class="date">
-
-<p><span>{{ page.date | date: "%d %B %Y" }}</span> - {{ page.location }}</p>
-
-</section>
 
 <article>
-  <section class="content">
+  <p class="date">
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d %B %Y" }}</time> - {{ page.location }}
+  </p>
+
+  <div class="content">
     {{ content }}
-  </section>
+  </div>
 </article>
 
 <div id="related">
