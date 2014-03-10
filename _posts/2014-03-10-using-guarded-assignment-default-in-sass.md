@@ -34,13 +34,13 @@ How is this useful? It allow us to create customisable modules with fallbacks. L
 /* _headers.scss module */
 
 h1 {
-    font-size: 2em;
-    color: #222;
+  font-size: 2em;
+  color: #222;
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #333;
+  font-size: 1.5em;
+  color: #333;
 }
 {% endhighlight %}
 
@@ -58,13 +58,13 @@ $h2_font_size: 1.5em !default;
 $h2_color: #333 !default;
 
 h1 {
-    font-size: $h1_font_size;
-    color: $h1_color;
+  font-size: $h1_font_size;
+  color: $h1_color;
 }
 
 h2 {
-    font-size: $h2_font_size;
-    color: $h2_color;
+  font-size: $h2_font_size;
+  color: $h2_color;
 }
 {% endhighlight %}
 
