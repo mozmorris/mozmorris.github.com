@@ -10,7 +10,7 @@ color: e6623c
 {{ page.title }}
 ================
 
-How does Sass' guarded assignment (`!default`) keyword work?
+How does Sass's guarded assignment (`!default`) keyword work?
 
 {% highlight sass %}
 /* custom vars */
@@ -28,7 +28,7 @@ $module_bgcolor: #ccc !default;
 
 `!default` will assign a value only if the variable does not already have one. In other words, it prevents a variable from being reassigned.
 
-How is this useful? It allow us to create customisable modules with fallbacks. Let's say we've created a headings module that styles the page headers.
+How is this useful? It allow us to create customisable modules with fallbacks. Let's say we've created a headings module that styles the page headers:
 
 {% highlight sass %}
 /* _headers.scss module */
@@ -68,7 +68,7 @@ h2 {
 }
 {% endhighlight %}
 
-Consuming and customising the module is now a trivial task. Note here the order of things. The variables are defined **before** importing the headers module.
+Consuming and customising the module is now a trivial task. Note here the order of things. The variables are defined **before** importing the headers module:
 
 {% highlight sass %}
 /* app.scss */
