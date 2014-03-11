@@ -26,7 +26,7 @@ $module_bgcolor: #ccc !default;
 }
 {% endhighlight %}
 
-`!default` will assign a value only if the variable does not already have one. In other words, it prevents a variable from being reassigned.
+`!default` will assign a value only if the variable doesn't already have one. In other words, it prevents a variable from being reassigned.
 
 How is this useful? It allow us to create customisable modules with fallbacks. Let's say we've created a headings module that styles the page headers:
 
