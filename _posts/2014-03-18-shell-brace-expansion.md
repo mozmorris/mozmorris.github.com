@@ -44,7 +44,7 @@ The comma-separated sequence `{aa,bb,cc}` becomes `aa bb cc`. While the sequence
 Examples
 --------
 
-How to create a backup of file. Easy:
+How to create a backup of `file.txt`. Easy:
 
 {% highlight bash %}
 $ cp /subdirectory/file.txt{,.bak}
