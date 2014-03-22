@@ -23,7 +23,9 @@ Vagrant & VirtualBox
 
 [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-Vagrant is available as a RubyGem. Their site recommends using their own package installer but since I got my Ruby & Gems installed with [rbenv](https://github.com/sstephenson/rbenv), I'll go the gem route. 
+**Update: March 2014** - The latest version of Vagrant is no longer available as a RubyGem. [Read why here](http://mitchellh.com/abandoning-rubygems). Use the package installer from [http://www.vagrantup.com/](http://www.vagrantup.com/).
+
+<strike>Vagrant is available as a RubyGem. Their site recommends using their own package installer but since I got my Ruby & Gems installed with [rbenv](https://github.com/sstephenson/rbenv), I'll go the gem route.</strike> 
 
 {% highlight bash %}
 $ gem install vagrant
