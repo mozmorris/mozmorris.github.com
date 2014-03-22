@@ -61,7 +61,7 @@ $ cat /etc/issue
 CentOS release 6.3 (Final)
 {% endhighlight %}
 
-Seriously, how easy was that? Vagrant generates a shared folder to the the host OS at `/vagrant`
+Seriously, how easy was that? Vagrant generates a shared folder to the host OS at `/vagrant`
 
 {% highlight bash %}
 $ cd /vagrant
