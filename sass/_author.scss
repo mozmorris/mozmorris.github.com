@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    $AUTHOR
+\*------------------------------------*/
+
+.author {
+  @extend .clearfix;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  border: solid #dededc;
+  border-width: 2px 0;
+
+  h3 {
+    margin: 10px 0 0;
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+}
+
+    .author__image {
+      float: left;
+      width: 75px;
+      height: 75px;
+      margin-right: 20px;
+      overflow: hidden;
+      @include border-radius(75px);
+    }
+

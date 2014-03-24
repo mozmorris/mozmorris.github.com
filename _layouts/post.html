@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<article>
-  <p class="date">
+<article class="[ post ]">
+  <p class="[ post__date ]">
     <span><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d %B %Y" }}</time></span> - {{ page.location }}
   </p>
 
-  <div class="content">
+  <div class="[ post__content ]">
     {{ content }}
   </div>
 </article>
 
-<div id="related">
+<div class="[ related ]">
   <h2>Unrelated Posts</h2>
-  <ul class="posts">
+
+  <ul>
     {% for post in site.related_posts limit:3 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+
   <p><a href="/">View all posts</a></p>
 </div>

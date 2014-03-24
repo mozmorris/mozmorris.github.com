@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    $Layout
+\*------------------------------------*/
+
+body {
+  position: relative;
+  background-color: #f2f2f0;
+}
+
+.page-content {
+  max-width: 700px;
+  margin: 20px auto 70px;
+  padding: 0 10px;
+  color: #333332;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  ul,
+  ol {
+    margin-left: 1.35em;
+    padding: 0;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    $Navigation
+\*------------------------------------*/
+
+.primary-nav {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+    .primary-nav__list {
+      padding: 0;
+      margin: 0;
+
+      a {
+        display: block;
+        padding: 8px;
+        background-color: #333;
+        color: #fff;
+        line-height: 20px;
+        @include transition(background-color .2s);
+
+        &:hover {
+          background-color: rgba(#333,.5);
+          text-decoration: none;
+        }
+      }
+    }
+
+@media only screen and (max-width: 780px) {
+  .primary-nav {
+    position: absolute;
+  }
+
+  .typekit-badge {
+    position: absolute !important;
+  }
+}

@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    $POST
+\*------------------------------------*/
+
+.post {
+  margin-bottom: 50px;
+
+  pre,
+  code {
+    overflow-x: auto;
+  }
+
+  pre {
+    border: 1px solid #ddd;
+
+    code {
+      display: block;
+      padding: 0 .4em;
+      border: none;
+    }
+  }
+
+  code {
+    padding: 0 0.2em;
+    border: 1px solid #ddd;
+    line-height: 1.3em;
+    font-size: 85%;
+  }
+}
+
+    .post__date {
+      padding-bottom: 12px;
+      border-bottom: 1px solid #dededc;
+    }

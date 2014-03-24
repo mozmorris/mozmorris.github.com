@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $CONTACT
+\*------------------------------------*/
+
+.contact {
+  @extend .clearfix;
+
+  p {
+    margin: 0;
+    font-size: 0.7em;
+  }
+}
+
+    .contact__links {
+      float: left;
+
+      &.contact__links--credits {
+        float: right;
+        text-align: right;
+      }
+    }
+
+@media only screen and (max-width: 480px) {
+
+  .contact {
+    float: none;
+  }
+
+      .contact__links {
+        float: none;
+
+        &.contact__links--credits {
+          float: none;
+          text-align: left;
+        }
+      }
+}

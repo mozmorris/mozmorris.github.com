@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+html {
+  font: 20px/30px Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  line-height: 1em;
+}
+
+@media only screen and (max-width: 780px) {
+  html {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    $TYPEKIT
+\*------------------------------------*/
+
+.wf-loading {
+  .main {
+    p,
+    ul li,
+    ol li,
+    h1,
+    h2,
+    h3,
+    h4 {
+      visibility: hidden;
+    }
+  }
+
+  .primary-nav a {
+    visibility: hidden;
+  }
+}
+
+.wf-active {
+  font-family: "calluna-sans-1", "calluna-sans-2";
+  font-weight: 400;
+
+  strong,
+  b {
+      font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .typekit-badge {
+    position: absolute !important;
+  }
+}
+

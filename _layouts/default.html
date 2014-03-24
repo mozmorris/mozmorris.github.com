@@ -14,7 +14,7 @@
 
         <style>
             a,
-            .date span {
+            .post__date span {
                 color: #{{ page.color }};
             }
         </style>
@@ -28,53 +28,67 @@
         <![endif]-->
     </head>
     <body>
-        <header class="clearfix">
-            <nav>
-                <ul>
-                    <li>
+        <div class="page-wrapper">
+            <header class="page-header">
+                <nav class="[ primary-nav ]">
+                    <ul class="[ primary-nav__list ]">
+                        <li>
                         {% if page.link == 'home' %}
-                          <a href="/">Home</a>
+                            <a href="/">Home</a>
                         {% else %}
-                          <a href="/about.html">About</a>
+                            <a href="/about.html">About</a>
                         {% endif %}
-                    </li>
-                </ul>
-            </nav>
-            <div class="image-wrapper scale">
-                <img src="/images/space.gif">
-                <div class="image" style="background-image: url(/images/{{ page.image }});"></div>
-                {% if page.caption %}
-                    <div class="caption">
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="[ banner ]">
+                    <img class="[ banner__spacer ]" src="/images/space.gif">
+
+                    <div class="[ banner__image ]" style="background-image: url(/images/{{ page.image }});"></div>
+
+                    {% if page.caption %}
+                    <div class="[ banner__caption ]">
                         <em>{{ page.caption }}</em>
                     </div>
-                {% endif %}
-            </div>
-        </header>
-        <div class="wrapper clearfix">
-            <div class="main">
-                {{ content }}
-                <div class="author clearfix">
-                    {% if page.link == 'home' %}
-                        <a class="clip" href="/"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
-                        <h3><a href="/">Moz Morris</a></h3>
-                    {% else %}
-                        <a class="clip" href="/about.html"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
-                        <h3><a href="/about.html">Moz Morris</a></h3>
                     {% endif %}
+                </div>
+            </header>
+
+            <div class="page-content">
+                {{ content }}
+
+                <div class="[ author ]">
+                    {% if page.link == 'home' %}
+                    <a class="[ author__image ]" href="/"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
+
+                    <h3><a href="/">Moz Morris</a></h3>
+                    {% else %}
+                    <a class="[ author__image ]" href="/about.html"><img src="/images/moz_morris.jpg" alt="Moz Morris"></a>
+
+                    <h3><a href="/about.html">Moz Morris</a></h3>
+                    {% endif %}
+
                     <p>Freelance Web Developer</p>
                 </div>
-                <div class="meta clearfix">
-                    <div class="contact">
+
+                <div class="[ contact ]">
+                    <div class="[ contact__links ]">
                         <p><a href="https://github.com/MozMorris">https://github.com/MozMorris</a></p>
+
                         <p><a hrfe="http://www.linkedin.com/in/mozmorris">http://www.linkedin.com/in/mozmorris</a></p>
                     </div>
-                    <div class="contact right">
+                    <div class="[ contact__links contact__links--credits ]">
                         <p>moz@earthview.co.uk</p>
-                        <p>powered by <a href="https://github.com/mojombo/jekyll">jeykll</a> &amp; <a href="https://github.com/">GitHub</a></p>
+
+                        <p>
+                            powered by <a href="https://github.com/mojombo/jekyll">jeykll</a> &amp; <a href="https://github.com/">GitHub</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
         <script type="text/javascript">
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
