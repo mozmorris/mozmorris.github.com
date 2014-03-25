@@ -10,6 +10,8 @@ body {
 .page-content {
   position: relative;
   z-index: 10;
+  // fix for iOS devices ignoring z-index on scroll
+  @include transform(translate3d(0,0,0));
   background-color: #f2f2f0;
   color: #333332;
   text-rendering: optimizeLegibility;
@@ -30,6 +32,7 @@ body {
 
 .spacer {
   width: 100%;
+  max-height: 537px;
 }
 
 @media only screen and (max-width: 640px) {
