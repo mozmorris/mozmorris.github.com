@@ -31,3 +31,14 @@
       font-size: 0.7em;
       line-height: 1em;
     }
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    position: relative;
+    max-height: 537px;
+  }
+
+      .spacer.spacer--banner {
+        display: block;
+      }
+}
