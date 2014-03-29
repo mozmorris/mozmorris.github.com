@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/css/screen.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
 
         <style>
@@ -33,11 +34,10 @@
                 <nav class="[ primary-nav ]">
                     <ul class="[ primary-nav__list ]">
                         <li>
-                        {% if page.link == 'home' %}
-                            <a href="/">Home</a>
-                        {% else %}
-                            <a href="/about.html">About</a>
-                        {% endif %}
+                            <a class="fa fa-home fa-lg" href="/"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-user fa-lg" href="/about.html"></a>
                         </li>
                     </ul>
                 </nav>
